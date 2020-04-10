@@ -2,6 +2,9 @@
 ### Instruction for running:
 - install dependencies globally with ```npm install -g snarkjs circom```
 - switch comment at the end of mimcsponge.circom to switch between mimcFeistel and mimcSponge
+- inputs can be changed in inputs.json
+- input format for mimcSponge: {"ins": [0,0], "k": 0}
+- input format for mimcFeistel: {xL_in: 1, xR_in: 2, k: 3}
 
 ### Run the following:
 - compile with ```circom mimcsponge.circom --r1cs --sym --wasm```
